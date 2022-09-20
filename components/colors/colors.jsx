@@ -1,6 +1,7 @@
 const Colors = () => {
     return (
         <div className='flex flex-col items-center p-6 mx-auto max-w-sm shadow-xl rounded-2xl'>
+            <h1 className="text-2xl">Working with colors</h1>
             {/* Default colors  */}
             {/* white, black, red, green, blue, orange, yellow, purple, lime, emerald, teal, cyan, indigo, violet, fuchsia, pink, rose, sky, gray, slate, zinc, neutral, stone, amber,   */}
             {/* white and black have no shades. 
@@ -10,9 +11,9 @@ const Colors = () => {
 
             {/* <p className="text-white p-4">Tailwind white</p> */}
 
-            <p className="text-red-500 p-4">Tailwind Red</p>
+            <p className="text-red-500 p-2">Tailwind Red</p>
 
-            <p className="text-green-700 p-4">Tailwind green</p>
+            <p className="text-green-700 p-2">Tailwind green</p>
 
             {/* Background Colors  */}
 
@@ -39,39 +40,40 @@ const Colors = () => {
             {/* Divide Colors  */}
 
             <div className="divide-y divide-blue-800 mb-4">
-                <div>Item 1</div>
-                <div>Item 2</div>
-                <div>Item 3</div>
-                <div>Item 4</div>
-                <div>Item 5</div>
+                <div>Item 1 divider</div>
+                <div>Item 2 divider</div>
+                <div>Item 3 divider</div>
+                <div>Item 4 divider</div>
+                <div>Item 5 divider</div>
             </div>
 
             {/* Outline Colors  */}
 
-            <button className="outline outline-red-500 mb-4 rounded-md p-1">Hello User</button>
-            <button className="outline outline-blue-700 mb-4 rounded-md p-1">Hey User</button>
+            <button className="outline outline-red-500 mb-4 rounded-md p-1 outline-2">Hello User</button>
+            <button className="outline outline-blue-700 mb-4 rounded-md p-1 outline-2">Hey User</button>
 
             {/* Box Shadow Colors (Opacity defaults to 100, but you can set it) */}
 
-            <button className="shadow-lg bg-cyan-500 shadow-cyan-500">
+            <button className="shadow-lg bg-cyan-500 shadow-cyan-500 mb-4 p-1 rounded-lg text-white">
                 Subscribe
             </button>
 
             {/* changing the opacity to 50 */}
-            <button className="shadow-lg bg-cyan-500 shadow-purple-500/80 mb-4">
+            <button className="shadow-lg bg-cyan-500 shadow-purple-500/80 mb-4 p-1 text-white rounded-lg">
                 Subscribe
             </button>
+
             {/* Accent Colors  */}
 
-            <input type="checkbox" className="accent purple-500" checked/>
-            <input type="checkbox" className="accent cyan-500" checked/>
+            <input type="checkbox" className="accent purple-500 mb-2" checked/>
+            <input type="checkbox" className="accent cyan-500 mb-4" checked/>
 
 
             {/* Arbitrary Colors  */}
 
-            <div className="bg-[#427fab]">Hello</div>
+            <div className="bg-[#427fab] p-1 rounded-lg text-white">Hello</div>
             <div className="bg-[rbg(255,0,0)]">Hello</div>
-            <div className="bg-[steelblue]">Hello</div>
+            <div className="bg-[steelblue] rounded-lg text-white p-1">Hello</div>
 
         </div>
     )
